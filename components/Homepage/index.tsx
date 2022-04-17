@@ -1,5 +1,6 @@
 import type { NextPage } from 'next';
 import styled from "styled-components";
+import { resumeDetails } from "../../constants";
 
 const Container = styled.div`
   width: 100%;
@@ -16,7 +17,7 @@ const Container = styled.div`
 const HomePage: NextPage = () => {
     return (
         <Container>
-            Hey
+            {resumeDetails.name}
         </Container>
     );
 }
